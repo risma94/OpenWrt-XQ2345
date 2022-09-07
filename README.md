@@ -1,6 +1,8 @@
-# OpenWrt for Amlogic TV Boxes / 晶晨 OpenWrt
+感谢@ophub 大佬
 
-查看英文说明 | [View English description](README.md)
+[项目源地址](https://github.com/ophub/amlogic-s9xxx-openwrt/)
+
+# OpenWrt for Amlogic TV Boxes / 晶晨 OpenWrt
 
 [OpenWrt](https://openwrt.org/) 项目是一个针对嵌入式设备的 Linux 路由器操作系统。OpenWrt 不是一个单一且不可更改的固件，而是提供了具有软件包管理功能的完全可写的文件系统，让您可以自由选择需要的软件包来定制路由器系统。对于开发人员来说，OpenWrt 是一个无需围绕它构建完整固件就能开发应用程序的框架；对于普通用户来说，这意味着拥有了完全定制的能力，能以意想不到的方式使用该设备。它拥有超过 3000+ 个标准化应用软件包和非常丰富的第三方插件支持，让您可以轻松地将他们应用于各种支持的设备。
 
