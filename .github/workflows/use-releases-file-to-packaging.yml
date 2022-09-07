@@ -20,7 +20,7 @@ on:
       openwrt_soc:
         description: "Select device SoC"
         required: false
-        default: "all"
+        default: "s912"
         type: choice
         options:
           - all
@@ -43,13 +43,14 @@ on:
       openwrt_kernel:
         description: "Select kernel version"
         required: false
-        default: "5.10.135_5.15.50"
+        default: "5.15.62_5.19.1"
         type: choice
         options:
           - 5.4.210_5.10.135_5.15.50
           - 5.4.210_5.10.135
           - 5.10.135_5.15.50
           - 5.15.50_5.19.1
+          - 5.15.62_5.19.1
           - 5.4.210
           - 5.10.135
           - 5.15.50
