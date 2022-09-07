@@ -148,7 +148,7 @@ jobs:
 
       - name: Build OpenWrt firmware
         if: steps.compile.outputs.status == 'success' && !cancelled()
-        uses: ophub/amlogic-s9xxx-openwrt@main
+        uses: niliovo/OpenWrt-XQ2345@main
         with:
           openwrt_path: openwrt/bin/targets/*/*/*rootfs.tar.gz
           openwrt_soc: ${{ github.event.inputs.openwrt_soc }}
