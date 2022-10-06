@@ -13,7 +13,7 @@ on:
       openwrt_soc:
         description: "Select Amlogic SoC"
         required: false
-        default: "s912"
+        default: "s905x"
         type: choice
         options:
           - all
@@ -148,7 +148,7 @@ jobs:
 
       - name: Build OpenWrt firmware
         if: steps.compile.outputs.status == 'success' && !cancelled()
-        uses: niliovo/OpenWrt-XQ2345@main
+        uses: risma94/OpenWrt-XQ2345
         with:
           openwrt_path: openwrt/bin/targets/*/*/*rootfs.tar.gz
           openwrt_soc: ${{ github.event.inputs.openwrt_soc }}
@@ -160,7 +160,7 @@ jobs:
         id: organize
         if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
         run: |
-          cd /home/runner/work/_actions/niliovo/OpenWrt-XQ2345/main/out
+          cd /home/runner/work/_actions/risma94/OpenWrt-XQ2345/main/out
           echo "FIRMWARE=$PWD" >> $GITHUB_ENV
           echo "TARGET=$PWD/*" >> $GITHUB_ENV
           echo "::set-output name=status::success"
